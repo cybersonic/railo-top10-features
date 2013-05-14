@@ -1,0 +1,12 @@
+component {
+	this.name = "railo10Features";
+	this.datasources.demo_db={
+		class:'org.gjt.mm.mysql.Driver'
+		,connectionString:'jdbc:mysql://localhost:3306/demo_db?characterEncoding=UTF-8&useUnicode=true'
+		,username:'demouser'
+		,password:"encrypted:6e49159b1b23afc5e6b553dc0cf48ebf79009f1987843d9b1e75ec492c886ebf"
+	};
+	this.datasource = "demo_db";
+	this.defaultdatasource = "demo_db";
+	
+}
