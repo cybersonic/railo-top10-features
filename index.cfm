@@ -1,45 +1,24 @@
 <cf_layout>
 	<cfoutput>
-			<ul>
-
-
-								<li><a href="feature_10.cfm" data-toggle="tooltip" title="Datasources in Application.cfc" >Feature ##10</a></li>
-
-
-								<li><a href="feature_09.cfm" data-toggle="tooltip" title="Echo and Dump">Feature ##09</a></li>
-
-
-								<li><a href="feature_08.cfm" data-toggle="tooltip" title="Tags in CFSCRIPT!">Feature ##08</a></li>
-
-
-								<li><a href="feature_07.cfm" data-toggle="tooltip" title="Extendability">Feature ##07</a></li>
-
-
-								<li><a href="feature_06.cfm" data-toggle="tooltip" title="Resources and Mappings. Oh My!">Feature ##06</a></li>
-
-
-								<li><a href="feature_05.cfm" data-toggle="tooltip" title="Debugging Features!">Feature ##05</a></li>
-
-
-								<li><a href="feature_04.cfm" data-toggle="tooltip" title="Easy Class Loading">Feature ##04</a></li>
-
-
-								<li><a href="feature_03.cfm" data-toggle="tooltip" title="Lazy and Parallel Queries">Feature ##03</a></li>
-
-
-								<li><a href="feature_02.cfm" data-toggle="tooltip" title="Caches all over the place">Feature ##02</a></li>
-
-
-								<li><a href="feature_01.cfm" data-toggle="tooltip" title="Open Sauce!">Feature ##01</a></li>
-
-
-						</ul>
-		</cfoutput>
-						<script>
-						$(function(){
-							$("a").tooltip({placement:'right'});
-						});
-							
-						</script>
-
+		<style>
+		/*.hero-unit {
+			background:url(/img/railo_logo.png) no-repeat heigh:;
+			height:400px;
+		}
+		
+		.hero-unit h1 {
+			padding-top:300px;
+		}
+		*/
+		
+		</style>
+		
+		<div class="hero-unit">
+			<img src="/img/railo_logo.png" width="400">
+		  <h1>Top 10 Features</h1>
+		  <h2>- Mark Drew ? (<a href="http://www.twitter.com/markdrew">@markdrew</a>) : <a href="mailto:mark@getrailo.com">mark@getrailo.com</a></h2>
+		  <h3>- The Railo Company <a href="http://getrailo.com">http://getrailo.com</a></h3>
+		</div>
+		
+	</cfoutput>
 </cf_layout>

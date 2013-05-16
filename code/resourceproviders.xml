@@ -1,0 +1,40 @@
+<resources>
+	<default-resource-provider 
+			arguments="lock-timeout:1000;" 
+			class="railo.commons.io.res.type.file.FileResourceProvider"/>
+
+	<resource-provider 
+			arguments="lock-timeout:20000;socket-timeout:-1;client-timeout:60000" 
+			class="railo.commons.io.res.type.ftp.FTPResourceProvider"
+			scheme="ftp"/>
+	
+	<resource-provider
+			arguments="lock-timeout:1000;case-sensitive:true;"
+			class="railo.commons.io.res.type.zip.ZipResourceProvider"
+			scheme="zip"/>
+	
+	<resource-provider
+			arguments="lock-timeout:1000;case-sensitive:true;"
+			class="railo.commons.io.res.type.tar.TarResourceProvider"
+			scheme="tar"/>
+	
+	<resource-provider
+			arguments="lock-timeout:1000;case-sensitive:true;"
+			class="railo.commons.io.res.type.tgz.TGZResourceProvider"
+			scheme="tgz"/>
+	
+	<resource-provider 
+			arguments="lock-timeout:10000;case-sensitive:false;"
+			class="railo.commons.io.res.type.http.HTTPResourceProvider"
+			scheme="http"/>
+	
+	<resource-provider
+			arguments="lock-timeout:10000;case-sensitive:false;"
+			class="railo.commons.io.res.type.http.HTTPSResourceProvider"
+			scheme="https"/>
+	
+	<resource-provider
+			arguments="lock-timeout:10000;"
+			class="railo.commons.io.res.type.s3.S3ResourceProvider"
+			scheme="s3"/>
+</resources>
