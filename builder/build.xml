@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="swisscom" default="default">
+	
+	<path id="railo.path">
+	     <fileset dir="lib/" includes="*.jar"/>
+	</path>
+	<typedef name="railo" classname="railo.cli.RailoTask" classpathref="railo.path" loaderref="railo.path.loader"/>
+
+	<target name="default">
+		<railo webroot="webroot/" uri="hello.cfm" />		
+	</target>
+		
+</project>
