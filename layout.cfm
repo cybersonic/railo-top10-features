@@ -1,5 +1,5 @@
 <cfparam name="attributes.title" default="">
-<cfparam name="attributes.debugging" default="false">
+<cfparam name="attributes.debugging" default="true">
 <cfset PageThatMyFaterBuilt = Replace(ListLast(CGI.SCRIPT_NAME, "_"), ".cfm", "")>
 <cfif ThisTag.executionMode IS "start">
 	<!DOCTYPE html>

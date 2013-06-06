@@ -16,7 +16,7 @@
 		<div class="hero-unit">
 			<img src="/img/railo_logo.png" width="400">
 		  <h1>Top 10 Features</h1>
-		  <h2>- Mark Drew ? <a href="http://www.twitter.com/markdrew">@markdrew</a> : <a href="mailto:mark@getrailo.com">mark@getrailo.com</a></h2>
+		  <h2>- Me =  'Mark Drew' ? <a href="http://www.twitter.com/markdrew">@markdrew</a> : <a href="mailto:mark@getrailo.com"> mark@getrailo.com</a> <abbr title="This is optional you know?">;</abbr></h2>
 		  <h3>- The Railo Company <a href="http://getrailo.com">http://getrailo.com</a></h3>
 		</div>
 		

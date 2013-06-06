@@ -7,7 +7,10 @@
 </cf_layout>
 --->
 <cf_layout title="Extendability!">
-		<div class="lead">
+
+	<cf_tabs>
+		<cf_tab label="intro">
+			<div class="lead">
 			<ul>
 				<li>Tags
 					<ul>
@@ -23,14 +26,24 @@
 
 					</ul>
 				</li>
-				<li>Like MongoDB native funcs!</li>
+				<li>Like MongoDB native funcs!
+					<ul><li>Want to see it? (no safety-net demo!)</li></ul>
+				</li>
 				<li>Event Gateways in CFML 
 				</li>
-				<li><a href="http://www.getrailo.org/index.cfm/extensions/">Extension Store</a></li>
-				<li><a href="/railo-context/admin/web.cfm?action=extension.applications">Web Admin Store</a></li>
-				<li><a href="/railo-context/admin/server.cfm?action=extension.applications">Server Admin Store</a></li>
+				<li><a target="_new" href="http://www.getrailo.org/index.cfm/extensions/">Extension Store</a></li>
+				<li><a target="_new" href="/railo-context/admin/web.cfm?action=extension.applications">Web Admin Store</a></li>
+				<li><a target="_new" href="/railo-context/admin/server.cfm?action=extension.applications">Server Admin Store</a></li>
 				<li>Extension Builder
 				</li>
 			</ul>	
 		</div>
+		</cf_tab>
+		<cf_tab label="mongo">
+			<cfshow template="/code/mongo.cfm" run="true"/>		
+
+		</cf_tab>
+	</cf_tabs>
+
+		
 </cf_layout>
