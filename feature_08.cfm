@@ -28,10 +28,10 @@
 			<cfshow template="/code/querycache.cfm" run="true" /> 
 		</cf_tab>
 
-		<cf_tab label="Resources">
+		<!--- <cf_tab label="Resources">
 			<h2>ram:// resource</h2>
 			<p>More on this in a minute</p>
-		</cf_tab>
+		</cf_tab> --->
 
 		<cf_tab label="Function">
 			<h2>cffunction/function</h2>

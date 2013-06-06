@@ -96,14 +96,33 @@ subl://open/?url=file:///etc/hosts
 					<cfset currPage = 100>
 				</cfif>
 
+<cfscript>
+	
+	labels  = {
+"10" = "Datasources in Application.cfc",
+"09" = "CFSCRIPT Love <3 ",
+"08" = "Caches",
+"07" = "> mymachine$ ",
+"06" = "Debugging",
+"05" = "Resources and Mappings Oh My!",
+"04" = "Parallel and Lazy",
+"03" = "Portability of Applications",
+"02" = "Extendability!",
+"01" = "It's Open Source!",
+	};
+
+</cfscript>
+
+
 				<cfoutput>
+			
 				<div class="pagination text-center">
 				  <ul>
 				    <li class="#currPage EQ 0 ? "active" : ""#"><a href="#prevPage#">Prev</a></li>
 				    	
 				    <cfloop from="10" to="1" index="i" step="-1">
 				    	<cfset class = currPage EQ i ? "active" : "">
-						<li class="#class#"><a href="feature_#NumberFormat(i, "00")#.cfm">#i#</a></li>
+						<li class="#class#"><a class="tooled" href="feature_#NumberFormat(i, "00")#.cfm" data-toggle="tooltip" data-original-title="#labels[NumberFormat(i, "00")]#" title>#i#</a></li>
 				    </cfloop>
 
 				    <cfif CGI.SCRIPT_NAME NEQ "/end.cfm">
@@ -146,7 +165,13 @@ subl://open/?url=file:///etc/hosts
     <script src="/js/holder/holder.js"></script>
     <script src="/js/google-code-prettify/prettify.js"></script>
 	<script src="/js/application.js"></script>
+<script>
+	$(function(){
+		var options = {};
+		$('.tooled').tooltip(options);
 
+	});
+</script>
 
 				</cfoutput>
 

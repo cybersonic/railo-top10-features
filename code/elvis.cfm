@@ -7,8 +7,12 @@
 
 	elvis = People.elvis ?: {name="elvis"};
 	dump(elvis);
-	//or
+	
 
-	peter = elvis ?: "Elvis in disguise";
+	People.elvis = "Hey, I spotted Elvis!";
+
+
+
+	peter = People.elvis  ?: "Elvis in disguise";
 	dump(peter);
 </cfscript>
