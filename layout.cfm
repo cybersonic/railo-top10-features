@@ -1,5 +1,5 @@
 <cfparam name="attributes.title" default="">
-<cfparam name="attributes.debugging" default="true">
+<cfparam name="attributes.debugging" default="false">
 <cfset PageThatMyFaterBuilt = Replace(ListLast(CGI.SCRIPT_NAME, "_"), ".cfm", "")>
 <cfif ThisTag.executionMode IS "start">
 	<!DOCTYPE html>
@@ -44,8 +44,9 @@ subl://open/?url=file:///etc/hosts
 			<cfif Len(attributes.title)>
 			<h1><cfif isNumeric(PageThatMyFaterBuilt)>###PageThatMyFaterBuilt# </cfif>#attributes.title#
 
-
+<!---
 			<a href="subl://open/?url=file://#getbasetemplatepath()#"><i class="icon-pencil"></i></a>
+--->			
 			</h1>	
 			</cfif>
 		</cfoutput>

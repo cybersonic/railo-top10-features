@@ -7,7 +7,7 @@ component{
 			param name="attributes.run" default="false";
 			param name="attributes.include" default="#attributes.run#";
 			param name="attributes.label" default="false";
-			param name="attributes.edit" default="true";
+			param name="attributes.edit" default="false";
 			param name="attributes.size" default="20";
 
 			param name="attributes.template";

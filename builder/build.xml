@@ -7,7 +7,7 @@
 	<typedef name="railo" classname="railo.cli.RailoTask" classpathref="railo.path" loaderref="railo.path.loader"/>
 
 	<target name="default">
-		<railo webroot="webroot/" uri="hello.cfm" />		
+		<railo webroot="webroot/" uri="hello.cfm?name=Luis" />		
 	</target>
 		
 </project>
